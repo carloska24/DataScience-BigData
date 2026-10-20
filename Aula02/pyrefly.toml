@@ -1,0 +1,14 @@
+# Configuração do Pyrefly para o projeto Aula02
+python-version = "3.14"
+python-interpreter-path = "C:/Users/joaob/AppData/Local/Python/pythoncore-3.14-64/python.exe"
+
+search-path = [
+  ".",
+  "C:/Users/joaob/AppData/Roaming/Python/Python314/site-packages",
+  "C:/Users/joaob/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages"
+]
+
+site-package-path = [
+  "C:/Users/joaob/AppData/Roaming/Python/Python314/site-packages",
+  "C:/Users/joaob/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages"
+]
