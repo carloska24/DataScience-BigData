@@ -20,10 +20,8 @@ Não é necessário criar um site ou aplicativo para a entrega pedida.
 - `resultados/`: tabelas e conclusão exportadas ao executar o notebook.
 - `entregas/`: apresentação, relatório final em Markdown e notebook, e roteiro de apresentação.
 - `doc/`: enunciado original do projeto em PDF.
-- `GUIA_ESTUDO.md`: explicações para estudar e apresentar o trabalho.
+- `entregas/GUIA_ESTUDO.md`: explicações para estudar e apresentar o trabalho.
 - `requirements.txt`: bibliotecas para execução local.
-- `criar_notebook.py`: script auxiliar para reconstruir a versão sem saídas do notebook.
-- `validar_notebook.py`: executa o notebook completo e salva suas saídas. Uso opcional.
 - `criar_apresentacao.mjs`: script auxiliar para gerar a apresentação; requer as bibliotecas e ferramentas do ambiente Codex usadas na criação. Os arquivos temporários são gravados em `tmp/slides/`.
 
 ## Executar no Colab
@@ -42,8 +40,12 @@ foi preparado um ambiente virtual na pasta `.venv`.
 ```powershell
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -r requirements.txt
-.venv/Scripts/python.exe validar_notebook.py
+.venv/Scripts/python.exe -m pip install jupyterlab
+.venv/Scripts/python.exe -m ipykernel install --user --name manutencao-industrial --display-name "Python (Manutenção Industrial)"
+.venv/Scripts/python.exe -m jupyter lab Projeto_Manutencao_Industrial.ipynb
 ```
+
+Selecione o kernel **Python (Manutenção Industrial)** e execute as células em ordem.
 
 ## Escolhas metodológicas
 
