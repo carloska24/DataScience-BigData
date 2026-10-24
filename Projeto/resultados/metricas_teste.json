@@ -1,0 +1,11 @@
+{
+  "modelo": "Random Forest",
+  "acuracia": 0.825,
+  "precisao": 0.5844155844155844,
+  "recall": 0.2393617021276596,
+  "f1": 0.33962264150943394,
+  "verdadeiros_negativos": 780,
+  "falsos_positivos": 32,
+  "falsos_negativos": 143,
+  "verdadeiros_positivos": 45
+}
