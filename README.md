@@ -30,7 +30,7 @@ O conteúdo está organizado para acompanhar o percurso de aprendizagem: compree
 | 📚 Estudo | 🔬 Prática | 🏭 Aplicação |
 | :--- | :--- | :--- |
 | PDFs e exemplos do professor | Notebooks, exercícios e orientações de ambiente | Análise de manutenção industrial, relatório e apresentação |
-| [Materiais das aulas](PDFS%20AULAS/) | [Aula 02](Aula02/) · [Aula 03](Aula03/) | [Abrir o projeto](Projeto/) |
+| [Materiais das aulas](PDFS%20AULAS/) | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) | [Abrir o projeto](Projeto/) |
 
 <a id="inicio-rapido"></a>
 ## ⚡ Início rápido
@@ -43,7 +43,7 @@ Escolha o caminho conforme seu objetivo:
 | Ler as conclusões e recomendações | [Relatório final](Projeto/entregas/Etapa_6_Relatorio_Final.md) |
 | Ver os slides | [Apresentação em PowerPoint](Projeto/entregas/Apresentacao_Manutencao_Industrial.pptx) |
 | Estudar para apresentar | [Guia de estudo](Projeto/entregas/GUIA_ESTUDO.md) · [Roteiro](Projeto/entregas/Roteiro_Apresentacao.md) |
-| Acompanhar os exercícios | [Aula 02](Aula02/) · [Aula 03](Aula03/) |
+| Acompanhar os exercícios | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) |
 | Preparar o computador | [Ambiente e execução](#ambiente-e-execucao) |
 | Consultar os enunciados | [PDFs das aulas](PDFS%20AULAS/) · [Enunciado do projeto](Projeto/doc/) |
 
@@ -57,8 +57,8 @@ DataScience-BigData/
 ├── .vscode/                          # Extensões recomendadas para o editor
 ├── assets/                           # Imagens usadas na documentação
 ├── Aula02/
-│   ├── Aula02_Completa_com_Dados/     # Exemplos completos da aula
-│   ├── Docs/                         # Material de referência
+│   ├── Aula02_Todos_os_Exemplos_Completo.ipynb
+│   ├── dados/                        # Quatro bases CSV usadas pelo notebook
 │   └── Exercicios Aula02/            # Exercícios e comprovante de entrega
 ├── Aula03/
 │   ├── Docs/                         # Material e instruções de execução
@@ -69,7 +69,8 @@ DataScience-BigData/
 │   ├── package.json
 │   └── requirements.txt
 ├── Codigos do Professor/             # Notebooks de referência do professor
-├── PDFS AULAS/                       # PDFs das aulas 01 a 04
+├── Aula05/                           # Exercícios da aula 05 e comprovante em entregas/
+├── PDFS AULAS/                       # PDFs das aulas 01 a 05
 ├── Projeto/
 │   ├── data/                         # Base original de manutenção
 │   ├── doc/                          # Enunciado original em PDF
@@ -86,7 +87,7 @@ DataScience-BigData/
 └── README.md                         # Página inicial do repositório
 ```
 
-A árvore destaca os diretórios e arquivos principais. Cada pasta de aula pode conter materiais complementares.
+A árvore destaca os diretórios e arquivos principais. Cada pasta de aula pode conter materiais complementares. Consulte o [inventário das bases](doc/BASES_DE_DADOS.md) para saber quais CSVs são necessários e o [registro de organização](doc/ORGANIZACAO.md) para entender as movimentações.
 
 <a id="projeto-de-manutencao-industrial"></a>
 ## 🏭 Projeto de manutenção industrial
@@ -273,3 +274,4 @@ Os PDFs e códigos do professor são materiais de referência acadêmica e perma
 [Voltar ao início](#data-science--big-data)
 
 </div>
+

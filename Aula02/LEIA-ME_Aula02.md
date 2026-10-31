@@ -1,13 +1,13 @@
-# Aula02 - como utilizar
+# Aula 02 — exemplos e exercícios
 
-Abra Aula02_Todos_os_Exemplos_Completo.ipynb no Jupyter, VS Code ou Google Colab.
-Mantenha a pasta dados ao lado do notebook. No Colab, crie a pasta dados e envie os quatro CSVs; também é possível enviar os CSVs diretamente para /content.
+- `Aula02_Todos_os_Exemplos_Completo.ipynb`: notebook completo da aula.
+- `dados/`: quatro bases originais necessárias para os exemplos.
+- `Exercicios Aula02/`: notebook dos exercícios e comprovante de entrega.
+- `verificacao/`: imagem de conferência do material.
+- Material do professor: [PDF da Aula 02](../PDFS%20AULAS/Aula%2002%20-%20Data%20Science%20e%20Big%20Data%20na%20Ind%C3%BAstria.pdf).
 
-Execute as células de cima para baixo. As saídas da execução local já estão salvas.
-Bibliotecas principais: pandas, numpy, matplotlib e scikit-learn.
-Instalação no notebook, se necessário: `%pip install pandas numpy matplotlib scikit-learn`.
+Abra o notebook com a pasta `Aula02` como diretório de trabalho e execute as células em ordem. A função `ler_base` encontra os CSVs em `dados/`. No Colab, crie `dados/` e envie os quatro arquivos; o notebook também aceita os arquivos diretamente na pasta atual.
 
-A etapa de PySpark é opcional e não foi executada neste computador, pois o pacote não está instalado. Seu código está incluído e requer PySpark e Java compatível.
+As bases são `producao.csv`, `base_p52.csv`, `base_p54.csv` e `manutencao.csv`. Elas são dados de entrada, não arquivos temporários. As cópias idênticas que estavam na antiga pasta `Aula02_Completa_com_Dados` foram removidas.
 
-Os CSVs originais foram baixados dos links do PDF da aula02. A lista de fontes e as correções dos slides constam no final do notebook.
-O notebook e o PDF originais foram preservados.
+Bibliotecas principais: Pandas, NumPy, Matplotlib e Scikit-learn. A etapa opcional de PySpark requer Spark e Java compatível. As fontes dos CSVs constam no notebook.
