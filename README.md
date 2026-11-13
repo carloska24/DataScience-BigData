@@ -30,7 +30,7 @@ O conteúdo está organizado para acompanhar o percurso de aprendizagem: compree
 | 📚 Estudo | 🔬 Prática | 🏭 Aplicação |
 | :--- | :--- | :--- |
 | PDFs e exemplos do professor | Notebooks, exercícios e orientações de ambiente | Análise de manutenção industrial, relatório e apresentação |
-| [Materiais das aulas](PDFS%20AULAS/) | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) | [Abrir o projeto](Projeto/) |
+| [Materiais das aulas](PDFS%20AULAS/) | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) · [Aula 06](Aula06/) | [Abrir o projeto](Projeto/) |
 
 <a id="inicio-rapido"></a>
 ## ⚡ Início rápido
@@ -43,7 +43,7 @@ Escolha o caminho conforme seu objetivo:
 | Ler as conclusões e recomendações | [Relatório final](Projeto/entregas/Etapa_6_Relatorio_Final.md) |
 | Ver os slides | [Apresentação em PowerPoint](Projeto/entregas/Apresentacao_Manutencao_Industrial.pptx) |
 | Estudar para apresentar | [Guia de estudo](Projeto/entregas/GUIA_ESTUDO.md) · [Roteiro](Projeto/entregas/Roteiro_Apresentacao.md) |
-| Acompanhar os exercícios | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) |
+| Acompanhar os exercícios | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) · [Aula 06](Aula06/) |
 | Preparar o computador | [Ambiente e execução](#ambiente-e-execucao) |
 | Consultar os enunciados | [PDFs das aulas](PDFS%20AULAS/) · [Enunciado do projeto](Projeto/doc/) |
 
@@ -70,6 +70,7 @@ DataScience-BigData/
 │   └── requirements.txt
 ├── Codigos do Professor/             # Notebooks de referência do professor
 ├── Aula05/                           # Exercícios da aula 05 e comprovante em entregas/
+├── Aula06/                           # Python para Data Science: três exercícios, notebooks e programas
 ├── PDFS AULAS/                       # PDFs das aulas 01 a 05
 ├── Projeto/
 │   ├── data/                         # Base original de manutenção
