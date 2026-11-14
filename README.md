@@ -1,278 +1,75 @@
-<div align="center">
-
-<img src="assets/banner.jpg" alt="Data Science e Big Data na Indústria" width="100%">
+![Data Science e Big Data na Indústria](assets/banner.jpg)
 
 # Data Science & Big Data
 
-### Dados industriais • Machine Learning • Processamento com Spark
+Materiais de **Data Science e Big Data na Indústria** e **Python para Data Science**. O repositório reúne aulas em PDF, notebooks de referência do professor, exercícios resolvidos e um estudo aplicado de falhas em equipamentos industriais.
 
-Um espaço de estudo e aplicação de ciência de dados à indústria: das primeiras análises em Python à avaliação de modelos e à comunicação dos resultados.
+[Materiais e exercícios](#materiais-e-exercicios) · [Projeto de manutenção industrial](#projeto-de-manutencao-industrial) · [Como executar](#como-executar)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+<a id="materiais-e-exercicios"></a>
+## Materiais e exercícios
 
-**[Começar](#inicio-rapido) · [Explorar as pastas](#estrutura-do-repositorio) · [Projeto industrial](#projeto-de-manutencao-industrial) · [Resultados](#resultados-do-projeto) · [Executar](#ambiente-e-execucao)**
+Os [PDFs de Data Science e Big Data na Indústria](PDFS%20AULAS/) cobrem as aulas 01 a 05. Os [notebooks do professor](Codigos%20do%20Professor/) incluem exemplos das aulas 03 e 05.
 
-</div>
-
----
-
-<a id="visao-geral"></a>
-## 🧭 Visão geral
-
-Este repositório reúne materiais da disciplina **Data Science e Big Data na Indústria**, exercícios, notebooks de aula e um projeto aplicado de análise de falhas em equipamentos industriais.
-
-O conteúdo está organizado para acompanhar o percurso de aprendizagem: compreender a base, explorar os dados, preparar as variáveis, comparar modelos, realizar agregações com PySpark e apresentar conclusões sustentadas pelas métricas.
-
-| 📚 Estudo | 🔬 Prática | 🏭 Aplicação |
-| :--- | :--- | :--- |
-| PDFs e exemplos do professor | Notebooks, exercícios e orientações de ambiente | Análise de manutenção industrial, relatório e apresentação |
-| [Materiais das aulas](PDFS%20AULAS/) | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) · [Aula 06](Aula06/) | [Abrir o projeto](Projeto/) |
-
-<a id="inicio-rapido"></a>
-## ⚡ Início rápido
-
-Escolha o caminho conforme seu objetivo:
-
-| Quero… | Onde começar |
-| :--- | :--- |
-| Conhecer o trabalho aplicado | [Notebook de manutenção industrial](Projeto/Projeto_Manutencao_Industrial.ipynb) |
-| Ler as conclusões e recomendações | [Relatório final](Projeto/entregas/Etapa_6_Relatorio_Final.md) |
-| Ver os slides | [Apresentação em PowerPoint](Projeto/entregas/Apresentacao_Manutencao_Industrial.pptx) |
-| Estudar para apresentar | [Guia de estudo](Projeto/entregas/GUIA_ESTUDO.md) · [Roteiro](Projeto/entregas/Roteiro_Apresentacao.md) |
-| Acompanhar os exercícios | [Aula 02](Aula02/) · [Aula 03](Aula03/) · [Aula 05](Aula05/) · [Aula 06](Aula06/) |
-| Preparar o computador | [Ambiente e execução](#ambiente-e-execucao) |
-| Consultar os enunciados | [PDFs das aulas](PDFS%20AULAS/) · [Enunciado do projeto](Projeto/doc/) |
-
-É possível ler os notebooks com suas saídas diretamente no GitHub. Para executar ou alterar as análises, use Jupyter, VS Code ou Google Colab.
-
-<a id="estrutura-do-repositorio"></a>
-## 🗂️ Estrutura do repositório
-
-```text
-DataScience-BigData/
-├── .vscode/                          # Extensões recomendadas para o editor
-├── assets/                           # Imagens usadas na documentação
-├── Aula02/
-│   ├── Aula02_Todos_os_Exemplos_Completo.ipynb
-│   ├── dados/                        # Quatro bases CSV usadas pelo notebook
-│   └── Exercicios Aula02/            # Exercícios e comprovante de entrega
-├── Aula03/
-│   ├── Docs/                         # Material e instruções de execução
-│   ├── Entrega Colab Aula03/         # Notebook de entrega e dados
-│   ├── assets/                       # Imagens de apoio
-│   ├── Aula03_Todos_os_Exemplos_Completo.ipynb
-│   ├── consumo_energetico_alunos.csv
-│   ├── package.json
-│   └── requirements.txt
-├── Codigos do Professor/             # Notebooks de referência do professor
-├── Aula05/                           # Exercícios da aula 05 e comprovante em entregas/
-├── Aula06/                           # Python para Data Science: três exercícios, notebooks e programas
-├── PDFS AULAS/                       # PDFs das aulas 01 a 05
-├── Projeto/
-│   ├── data/                         # Base original de manutenção
-│   ├── doc/                          # Enunciado original em PDF
-│   ├── entregas/                     # Relatório, slides e materiais de apresentação
-│   ├── resultados/                   # Tabelas, métricas e conclusão exportadas
-│   ├── Projeto_Manutencao_Industrial.ipynb
-│   ├── criar_apresentacao.mjs         # Fonte auxiliar da apresentação
-│   ├── requirements.txt              # Dependências específicas do projeto
-│   └── README.md                     # Documentação do trabalho aplicado
-├── doc/                              # Guias de ambiente e notebooks introdutórios
-├── .gitignore                        # Regras para arquivos locais e temporários
-├── package.json                      # Atalhos opcionais de configuração
-├── requirements.txt                  # Dependências gerais das aulas
-└── README.md                         # Página inicial do repositório
-```
-
-A árvore destaca os diretórios e arquivos principais. Cada pasta de aula pode conter materiais complementares. Consulte o [inventário das bases](doc/BASES_DE_DADOS.md) para saber quais CSVs são necessários e o [registro de organização](doc/ORGANIZACAO.md) para entender as movimentações.
+| Aula | Conteúdo | Arquivos |
+| --- | --- | --- |
+| [Aula 02](Aula02/) | Pandas e análise exploratória de dados de produção, energia, transporte, vendas e manutenção | [Notebook completo](Aula02/Aula02_Todos_os_Exemplos_Completo.ipynb) · [Exercícios resolvidos](Aula02/Exercicios%20Aula02/Carlos_Pereira_Exercicios_Aula_02.ipynb) · [Dados](Aula02/dados/) |
+| [Aula 03](Aula03/) | Análise de consumo energético | [Notebook completo](Aula03/Aula03_Todos_os_Exemplos_Completo.ipynb) · [Entrega para Colab](Aula03/Entrega%20Colab%20Aula03/Carlos_Pereira_Aula03_Exercicios_Resolvidos_Colab.ipynb) · [Dados](Aula03/consumo_energetico_alunos.csv) |
+| [Aula 05](Aula05/) | K-Means, padronização de variáveis e método do cotovelo | [Agrupamento de viagens](Aula05/Exercicio01_Aula05.ipynb) · [Agrupamento de máquinas](Aula05/Exercicio02_Aula05.ipynb) |
+| [Aula 06](Aula06/) | Aula 01 de **Python para Data Science**, com notebooks e scripts Python | [PDF](Aula06/Aula%2001%20-%20Python%20para%20Data%20Science.pdf) · [Temperatura de máquina](Aula06/Exercicio01_Aula06.ipynb) · [Vendas](Aula06/Exercicio02_Aula06.ipynb) · [Preços de ações](Aula06/Exercicio03_Aula06.ipynb) |
 
 <a id="projeto-de-manutencao-industrial"></a>
-## 🏭 Projeto de manutenção industrial
+## Projeto de manutenção industrial
 
-O estudo utiliza o contexto da **S&M Industry Tech**, com o objetivo de investigar condições associadas às falhas e avaliar modelos de classificação. O trabalho segue o enunciado do **Prof. Me. Daniel Vieira**.
+O estudo da **S&M Industry Tech** investiga condições associadas a falhas em cinco máquinas. A base original tem 5.050 registros. Após remover 50 duplicatas exatas, restam 5.000 registros, dos quais 903 têm falha (18,06%).
 
-| Aspecto | Descrição |
-| :--- | :--- |
-| Base original | 5.050 registros e 8 colunas |
-| Base após deduplicação | 5.000 registros, após remover 50 duplicatas exatas |
-| Equipamentos | Cinco máquinas |
-| Variáveis operacionais | Temperatura, vibração, pressão, corrente elétrica e horas de operação |
-| Alvo | Ocorrência de falha no registro atual |
-| Classificação | Árvore de Decisão, Random Forest, Regressão Logística e referência majoritária |
-| Agrupamento | K-Means, comparando de 2 a 6 grupos |
-| Processamento | Pandas e PySpark em modo local |
+1. Explorar temperatura, vibração, pressão, corrente elétrica e horas de operação. Na preparação, verificar datas e valores ausentes e sinalizar medições extremas.
+2. Classificar a ocorrência de falha no próprio registro. Comparar Árvore de Decisão, Random Forest e Regressão Logística com uma referência majoritária, usando divisão temporal de aproximadamente 60% para treino, 20% para validação e 20% para teste.
+3. Identificar perfis operacionais com K-Means a partir das variáveis operacionais. Calcular a taxa de falhas de cada grupo após o agrupamento.
+4. Reproduzir operações de leitura, filtragem e agregação com PySpark local e conferir os resultados com Pandas.
 
-### Percurso da análise
+### Resultados
 
-| Etapa | O que é feito | Entrega |
-| :--- | :--- | :--- |
-| 01 · Exploração | Inspeção, estatísticas, distribuições e relações entre variáveis | Tabelas e gráficos no notebook |
-| 02 · Preparação | Verificação de datas, duplicatas, ausências e valores extremos | Base preparada e critérios documentados |
-| 03 · Classificação | Separação temporal, pipelines, comparação e escolha do modelo | Métricas de validação e teste |
-| 04 · Agrupamento | Imputação, padronização e avaliação de grupos | Perfis operacionais dos clusters |
-| 05 · PySpark | Leitura, filtros, deduplicação e agregações | Conferência com os resultados do Pandas |
-| 06 · Comunicação | Interpretação dos resultados e recomendações | Relatório final, apresentação e roteiro |
+A **Random Forest** foi escolhida pelo maior F1 na validação. No teste final, com 1.000 registros, obteve **82,50% de acurácia, 58,44% de precisão, 23,94% de recall e F1 de 0,340**. Detectou 45 das 188 falhas e deixou 143 sem identificar, o que limita seu uso para apoiar decisões de manutenção. [Comparação na validação](Projeto/resultados/comparacao_validacao.csv) · [Métricas de teste](Projeto/resultados/metricas_teste.json)
 
-### Critérios metodológicos
+O K-Means identificou três perfis. O grupo com maiores médias de horas de operação e vibração teve a maior proporção de registros com falha (31,95%). [Perfis dos grupos](Projeto/resultados/perfis_clusters.csv) · [Resultados exportados](Projeto/resultados/)
 
-- A separação dos dados respeita a ordem temporal: aproximadamente **60% para treino, 20% para validação e 20% para teste**. Registros do mesmo instante ficam no mesmo conjunto.
-- A imputação dos atributos ocorre nos pipelines dos classificadores, com ajuste nos dados de treinamento.
-- A seleção do classificador utiliza o **F1 da classe falha na validação**, com recall como desempate. O teste avalia o modelo escolhido após reajuste com treino e validação.
-- Valores extremos são sinalizados e discutidos, sem exclusão automática.
-- A coluna `falha` não participa do ajuste do K-Means; as taxas por grupo são analisadas depois.
-- O uso de Spark demonstra operações de processamento em modo local. O estudo não apresenta medição de ganho de desempenho em um cluster distribuído.
+### Arquivos do projeto
 
-<a id="resultados-do-projeto"></a>
-## 📊 Resultados do projeto
+| Para consultar | Arquivos |
+| --- | --- |
+| Enunciado e dados | [Enunciado original](Projeto/doc/Projeto%20P%C3%B3s%20Data%20Science%20e%20BigData.pdf) · [Base original](Projeto/data/dados_manutencao.csv) |
+| Código, gráficos e análises | [Notebook principal](Projeto/Projeto_Manutencao_Industrial.ipynb) |
+| Conclusões e recomendações | [Relatório em Markdown](Projeto/entregas/Etapa_6_Relatorio_Final.md) · [Relatório em notebook](Projeto/entregas/Etapa_6_Relatorio_Final.ipynb) |
+| Apresentação | [Slides em PowerPoint](Projeto/entregas/Apresentacao_Manutencao_Industrial.pptx) · [Guia de estudo](Projeto/entregas/GUIA_ESTUDO.md) · [Roteiro](Projeto/entregas/Roteiro_Apresentacao.md) |
 
-A **Random Forest** apresentou o melhor F1 entre os classificadores comparados na validação. Na avaliação final, com 1.000 registros de teste, os resultados exportados foram:
+<a id="como-executar"></a>
+## Como executar
 
-| Acurácia | Precisão | Recall | F1-score |
-| :---: | :---: | :---: | :---: |
-| **82,50%** | **58,44%** | **23,94%** | **0,340** |
+### Aulas no Windows
 
-O modelo identificou **45 das 188 falhas** do teste. As 143 falhas não identificadas mostram que o recall ainda é limitado. Uma previsão constante de “sem falha” teria 81,20% de acurácia nesse conjunto; por isso, a acurácia isolada não descreve bem a capacidade de detectar falhas.
-
-O alvo representa a condição do registro atual. A previsão de uma falha com antecedência exigiria outro alvo, um horizonte futuro e uma avaliação específica.
-
-| Arquivo | Conteúdo |
-| :--- | :--- |
-| [comparacao_validacao.csv](Projeto/resultados/comparacao_validacao.csv) | Comparação dos modelos na validação |
-| [metricas_teste.json](Projeto/resultados/metricas_teste.json) | Métricas finais do classificador escolhido |
-| [importancias_validacao.csv](Projeto/resultados/importancias_validacao.csv) | Importância dos atributos na validação |
-| [perfis_clusters.csv](Projeto/resultados/perfis_clusters.csv) | Resumo dos grupos encontrados |
-| [taxas_por_maquina.csv](Projeto/resultados/taxas_por_maquina.csv) | Frequência de falhas por equipamento |
-| [conclusao.md](Projeto/resultados/conclusao.md) | Interpretação e recomendações |
-
-Os números acima documentam a execução salva no projeto. Consulte o [relatório final](Projeto/entregas/Etapa_6_Relatorio_Final.md) para os erros do modelo, os perfis de agrupamento e as limitações da análise.
-
-<a id="ambiente-e-execucao"></a>
-## 💻 Ambiente e execução
-
-### 1. Obter o repositório
-
-```powershell
-git clone https://github.com/carloska24/DataScience-BigData.git
-cd DataScience-BigData
-```
-
-### 2. Preparar o ambiente das aulas no Windows
-
-Os comandos abaixo usam o executável do ambiente virtual diretamente, sem exigir ativação no PowerShell.
+Clone o repositório ou abra sua cópia local. A partir da raiz, crie um ambiente virtual e instale as dependências gerais.
 
 ```powershell
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -r requirements.txt
-.venv/Scripts/python.exe -m pip install jupyterlab
-.venv/Scripts/python.exe -m ipykernel install --user --name datascience --display-name "Python (Data Science)"
-.venv/Scripts/python.exe -m jupyter lab
 ```
 
-No Jupyter ou no VS Code, selecione o kernel **Python (Data Science)**. Execute as células do notebook em ordem para manter os dados e as variáveis consistentes.
+No VS Code, abra o notebook e selecione `.venv/Scripts/python.exe` no seletor de kernel. Para usar o JupyterLab no navegador, instale-o com `.venv/Scripts/python.exe -m pip install jupyterlab` e inicie-o com `.venv/Scripts/python.exe -m jupyter lab`. Execute as células em ordem.
 
-### 3. Preparar o projeto industrial
+| Material | Diretório de trabalho e dados |
+| --- | --- |
+| Aula 02 | Use `Aula02/` como diretório de trabalho e mantenha os CSVs em `dados/`. No Colab, envie os CSVs para `dados/` ou para a pasta atual. [Instruções da Aula 02](Aula02/LEIA-ME_Aula02.md) |
+| Aula 03 | Use `Aula03/` como diretório de trabalho para o notebook completo. A versão de entrega para Colab contém os dados nas células. [Instruções da Aula 03](Aula03/README.md) |
+| Aulas 05 e 06 | Os dados já estão incorporados nos notebooks. A Aula 06 também tem instruções para executar os scripts pelo terminal. [Instruções da Aula 05](Aula05/README.md) · [Instruções da Aula 06](Aula06/README.md) |
 
-O projeto possui dependências próprias, incluindo **PySpark 4.0.1**, Seaborn, gdown e ferramentas de notebook. Para reproduzir o ambiente registrado na documentação, utilize **Java 17 ou superior**; a execução documentada utilizou Java 21 no Windows.
+### Projeto de manutenção industrial
 
-```powershell
-cd Projeto
-python -m venv .venv
-.venv/Scripts/python.exe -m pip install -r requirements.txt
-.venv/Scripts/python.exe -m pip install jupyterlab
-.venv/Scripts/python.exe -m ipykernel install --user --name manutencao-industrial --display-name "Python (Manutenção Industrial)"
-java -version
-.venv/Scripts/python.exe -m jupyter lab Projeto_Manutencao_Industrial.ipynb
-```
+Use as [dependências do projeto](Projeto/requirements.txt) em um ambiente próprio e abra o notebook com `Projeto/` como diretório de trabalho. A execução local documentada usou **PySpark 4.0.1 e Java 21 no Windows**. No Colab, execute a célula de preparação do ambiente. O notebook tenta baixar o CSV do enunciado e também aceita o arquivo enviado para a pasta de trabalho. [Instruções do projeto](Projeto/README.md)
 
-Selecione o kernel **Python (Manutenção Industrial)**. Mantenha a pasta `Projeto` como diretório de trabalho para que os caminhos relativos de `data/` e `resultados/` sejam resolvidos corretamente.
+Para consultar as bases de entrada de cada notebook, veja o [inventário dos dados](doc/BASES_DE_DADOS.md).
 
-### 4. Executar no Google Colab
+## Autoria
 
-1. Envie [Projeto_Manutencao_Industrial.ipynb](Projeto/Projeto_Manutencao_Industrial.ipynb) ao Google Colab.
-2. Confira a identificação do trabalho na primeira célula.
-3. Execute a preparação do ambiente e as demais células em ordem.
-4. O notebook prevê o download da base pelo link do enunciado. Se necessário, envie também o CSV de `Projeto/data/`, seguindo o caminho indicado no notebook.
-5. Salve a versão executada e confira os resultados antes da entrega.
-
-A documentação do projeto registra execução local; a execução no serviço Colab não foi verificada naquela sessão.
-
-<details>
-<summary><strong>Configuração opcional com npm</strong></summary>
-
-O `package.json` da raiz oferece atalhos para instalar as dependências Python das aulas e registrar o kernel. Node.js e npm são necessários somente para esses atalhos.
-
-```powershell
-npm install
-npm run test:env
-```
-
-O `postinstall` chama `python -m pip` e registra um kernel no usuário. Confira qual Python está selecionado antes de executar. Para abrir pelo comando `npm start`, instale também o pacote `notebook` no mesmo ambiente:
-
-```powershell
-python -m pip install notebook
-npm start
-```
-
-As dependências específicas de `Projeto/requirements.txt` precisam ser instaladas separadamente para o trabalho industrial.
-
-</details>
-
-<details>
-<summary><strong>Extensões recomendadas para VS Code</strong></summary>
-
-O arquivo `.vscode/extensions.json` recomenda:
-
-- **Python** — execução e seleção do interpretador.
-- **Pylance** — suporte de linguagem e análise de código.
-- **Jupyter** — edição e execução dos notebooks.
-- **Jupyter Notebook Renderers** — renderização de saídas dos notebooks.
-
-Consulte também o [guia de ambiente](doc/COMO_EXECUTAR.md) e as [orientações da Aula 03](Aula03/Docs/COMO_EXECUTAR.md).
-
-</details>
-
-## 🧰 Tecnologias e responsabilidades
-
-| Tecnologia | Papel no repositório |
-| :--- | :--- |
-| Python | Preparação dos dados e implementação das análises |
-| Pandas e NumPy | Manipulação de tabelas e operações numéricas |
-| Matplotlib e Seaborn | Gráficos e análise exploratória |
-| Scikit-learn | Pipelines, imputação, classificação, agrupamento e métricas |
-| PySpark | Operações de leitura, transformação e agregação |
-| Jupyter / VS Code / Colab | Leitura, edição e execução dos notebooks |
-| Markdown e PowerPoint | Documentação e apresentação dos resultados |
-
-## 📦 Entregas e reprodutibilidade
-
-O [notebook principal](Projeto/Projeto_Manutencao_Industrial.ipynb) reúne as análises e saídas. A pasta [entregas](Projeto/entregas/) contém as versões voltadas à leitura e à apresentação do trabalho.
-
-Para repetir a análise, mantenha a base original, instale as dependências da pasta correspondente, execute as células em sequência e confira as tabelas exportadas. A divisão temporal, a semente e os critérios de avaliação estão descritos no notebook. Os requisitos possuem faixas de versões; não constituem um congelamento completo do ambiente.
-
-Ambientes virtuais, caches e arquivos temporários são ignorados pelo Git. Resultados, dados de estudo e entregas fazem parte do conteúdo versionado.
-
-O script `Projeto/criar_apresentacao.mjs` preserva a fonte auxiliar dos slides e depende das bibliotecas e ferramentas do ambiente Codex usadas na criação. A apresentação `.pptx` já está disponível em `Projeto/entregas/` para leitura e edição.
-
-## 👤 Autoria e referências
-
-**Aluno:** Carlos Alexandre Duarte Pereira · [@carloska24](https://github.com/carloska24)
-
-**Disciplina:** Data Science e Big Data na Indústria  
-**Professor do projeto:** Prof. Me. Daniel Vieira
-
-Os PDFs e códigos do professor são materiais de referência acadêmica e permanecem atribuídos aos respectivos autores. A base de manutenção foi disponibilizada no [link indicado no enunciado](https://drive.google.com/file/d/1yQ7P-mbRK3Gsh12ey6ahxk8szc6pOie1/view).
-
----
-
-<div align="center">
-
-**Explorar os dados · Avaliar as evidências · Comunicar os resultados**
-
-[Voltar ao início](#data-science--big-data)
-
-</div>
-
+- **Aluno** · Carlos Alexandre Duarte Pereira ([carloska24](https://github.com/carloska24))
+- **Professor do projeto** · Prof. Me. Daniel Vieira
